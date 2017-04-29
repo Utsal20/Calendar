@@ -3,6 +3,8 @@
 
 #include "stdafx.h"
 #include "Calendar.h"
+#include <string>
+#include "Day.h"
 
 #define MAX_LOADSTRING 100
 
