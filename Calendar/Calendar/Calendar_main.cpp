@@ -152,6 +152,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             EndPaint(hWnd, &ps);
         }
         break;
+	case WM_SIZE:
+		RECT r;
+		GetWindowRect(hWnd, &r);
+		if (r.right - r.left < windowWidthMin)
+			SetWindowPos(hWnd, HWND_TOP, r.left, r.top, windowWidthMin, r.bottom - r.top, SWP_NOZORDER | SWP_NOSENDCHANGING);
+		if (r.bottom - r.top < windowHeightMin)
+			SetWindowPos(hWnd, HWND_TOP, r.left, r.top, r.right - r.left, windowWidthMin, SWP_NOZORDER | SWP_NOSENDCHANGING);
+		break;
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
