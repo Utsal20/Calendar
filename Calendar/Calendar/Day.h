@@ -9,7 +9,8 @@
 
 class Day {
 private:
-	std::vector <std::string, std::string> eventDetail;
+	std::vector <std::string> eventTime;
+	std::vector <std::string> eventName;
 public:
 	//stores the event into the vector and updates the file
 	void addEvent(std::string time, std::string name);
@@ -19,6 +20,9 @@ public:
 
 	//deletes an event (removes the item from the vector and updates the file)
 	void deleteEvent(std::string time, std::string name);
+
+	//writes everything to a file
+	void writeToFile();
 };
 #endif // !DAY_H
 

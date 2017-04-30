@@ -5,6 +5,7 @@
 #include "Calendar.h"
 #include <string>
 #include "Day.h"
+#include "DisplayMgr.h"
 
 #define MAX_LOADSTRING 100
 
@@ -148,7 +149,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         {
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
-            // TODO: Add any drawing code that uses hdc here...
+            // Add any drawing code that uses hdc here...
+			PlannerDrawWindow(hWnd, hdc);
+
             EndPaint(hWnd, &ps);
         }
         break;
