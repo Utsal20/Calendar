@@ -5,10 +5,12 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <vector>
 
 class Day {
 private:
+	std::string fileName;
 	std::vector <std::string> eventTime;
 	std::vector <std::string> eventName;
 public:
