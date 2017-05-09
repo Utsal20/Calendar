@@ -39,6 +39,8 @@ void Day::deleteEvent(std::string time, std::string name)
 		writeToFile();
 }
 
+//wrties on a file
+//event time on 1 line and event name on the next
 void Day::writeToFile()
 {
 	std::ofstream fout(fileName);
