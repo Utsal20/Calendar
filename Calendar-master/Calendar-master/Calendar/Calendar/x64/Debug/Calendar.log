@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  DisplayMgr.cpp
+  Day.cpp
+  Calendar.cpp
+  Generating Code...
+  LINK : C:\Users\igauli20\Desktop\Calendar-master\Calendar-master\Calendar-master\Calendar\x64\Debug\Calendar.exe not found or not built by the last incremental link; performing full link
+  Calendar.vcxproj -> C:\Users\igauli20\Desktop\Calendar-master\Calendar-master\Calendar-master\Calendar\x64\Debug\Calendar.exe
+  Calendar.vcxproj -> C:\Users\igauli20\Desktop\Calendar-master\Calendar-master\Calendar-master\Calendar\x64\Debug\Calendar.pdb (Full PDB)

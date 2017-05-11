@@ -20,7 +20,7 @@ void Day::checkEvent(int opt)
 		eventTime.push_back(tempName);
 
 		//add code to print out in Dialog Box
-		
+
 	}
 	fin.close();
 }

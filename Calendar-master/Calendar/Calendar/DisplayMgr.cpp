@@ -4,6 +4,9 @@
 HFONT fntChosen;
 char key;
 
+void plannerReset() {
+
+}
 
 void PlannerDrawWindow(HWND hwnd, HDC hdc) {
 
@@ -35,7 +38,7 @@ void PlannerDrawWindow(HWND hwnd, HDC hdc) {
 	MoveToEx(hdc, 825, 100, NULL); LineTo(hdc, 825, 500);
 	MoveToEx(hdc, 1025, 100, NULL); LineTo(hdc, 1025, 500);
 
-	//Horizontal Lines on calendar main screen
+	//Horizontal Lines
 
 	MoveToEx(hdc, 25, 100, NULL); LineTo(hdc, 1025, 100);
 	MoveToEx(hdc, 25, 500, NULL); LineTo(hdc, 1025, 500);

@@ -126,8 +126,6 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	int xPos, yPos;
-
     switch (message)
     {
     case WM_COMMAND:
@@ -157,13 +155,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             EndPaint(hWnd, &ps);
         }
         break;
-	case WM_LBUTTONUP:
-
-		xPos = (LOWORD(lParam)) / 100;
-		yPos = (HIWORD(lParam)) / 100;
-
-		break;
-
 	case WM_SIZE:
 		RECT r;
 		GetWindowRect(hWnd, &r);
@@ -178,7 +169,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     default:
         return DefWindowProc(hWnd, message, wParam, lParam);
     }
-
     return 0;
 }
 
